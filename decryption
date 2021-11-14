@@ -7,10 +7,10 @@ FILE *original, *process;
 printf("Enter the name of the file you want to decrypt: "); //this will change cus the original command already says the file name (cryptoMagic -decrypt [filename]
 scanf("%s", filename);
 original = fopen(filename, "w");
-if (original==NULL);
+if (original==NULL)
     printf("File does not exist");
 process = fopen("temp.txt", "r");
-if (process==NULL);
+if (process==NULL)
     printf("File does not exist");
 outChar = fgetc(process);
 while(outChar != EOF) //figure out how to loop through the .crp file, 
